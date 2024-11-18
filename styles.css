@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #898989;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    text-align: center;
+}
+
+section { margin-bottom: 1em; 
+    /* Adds a small margin below each section */ 
+}
+p {
+    line-height: 1.5; /* Adjust this value to get the desired spacing */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    margin: 0;
+    padding: 0.5em;
+    background-color: #f8f8f8;
+}
+
+.recipe-card p {
+    font-size: 0.9em;
+    color: gray;
+}
+
+h2 {
+    text-align: center;
+}
+
+article, li {
+    background-color: #fff;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#more {
+    display: none; /* Hidden by default */
+}
+
+.carousel-container {
+    position: relative;
+    width: 25vw; /* 1/4 of the viewport height */
+    height: 50vh; 
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 80%; /* Show a peek of the next image */
+    height: 100%;
+    position: relative;
+    margin: 0 10%; /* Ensure the items have space around them */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: calc(100% - 2em); /* Adjust to leave space for the description */
+    object-fit: cover;
+}
+
+.carousel-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5em;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+

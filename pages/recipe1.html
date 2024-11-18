@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roasted Sweet Potato</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Roasted Sweet Potato</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="all-recipes.html">All Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Added on: November 16, 2024</h2>
+            <p id="recipe-summary">
+                Perfectly roasted sweet potatoes are my current obsession!! 
+                <span id="dots">...</span>
+                <span id="more">
+                    Inspired by Sweet Green's harvest bowl,
+                     which I first had Junior year of high school (3 years ago), 
+                    I kept thinking of them until I decided to try to make them and I am glad I did. 
+                    <br><br>
+                    They are my favorite food as a post-run snack that fuels me, tastes super good, and are convenient. 
+                    Just preheat the oven to 425, cut, oil, salt and leave them in the oven for 50 minutes to an hour. Roasting them is my favorite form. 
+                    I’ve tried mashed sweet potatoes too which are delicious in their own rights but they are slightly more labor intensive. 
+                    <br><br>
+                    I like having them also as a side whether that is to a tomato veggie soup or a copycat SG harvest bowl.
+                    <br><br>
+                    I went through 5 pounds of sweet potatoes last week from Trader Joe’s, and this week probably as well. 
+                    It is definitely a staple of mine.
+                </span>
+            </p>
+            <button onclick="toggleMore()" id="toggle-button">Read more</button>
+            <h2>Ingredients:</h2>
+            <p>Sweet potato, Avocado Oil (other high temp), Salt</p>
+            <h2>Instructions:</h2>
+            <p> Wash the sweet potato. Cut sweet potato length wise. Cut into pretty thick slices. It does not need a lot of oil, add salt. The thinner they are the more crispy. 425 in the oven for an hour. 
+                I like when it caramelizes a bit on the flat side touching the pan!! I don't flip the pan or do anything and it comes out delicious. Do check on them because if they are thin
+                they can burn. And also avoid overlapping. 
+            </p>
+        </section>
+        
+        <!-- Carousel Section -->
+        <section class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="../pages/carousel-images/pic1.jpg" alt="Image 1">
+                    <p class="carousel-description">Description for Image 1</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="../pages/carousel-images/pic2.jpg" alt="Image 2">
+                    <p class="carousel-description">Description for Image 2</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="../pages/carousel-images/pic3.jpg" alt="Image 3">
+                    <p class="carousel-description">Description for Image 3</p>
+                </div>
+            </div>
+            <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+
+    </main>
+    <script src="../app.js"></script>
+</body>
+</html>
