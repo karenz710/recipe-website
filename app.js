@@ -47,7 +47,7 @@ function moveSlide(direction) {
         slideIndex = 0;
     }
 
-    carousel.style.transform = `translateX(-${slideIndex * 90}%)`;
+    carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
 }
 
 
